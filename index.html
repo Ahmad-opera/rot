@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.min.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="w-full p-10 wrap items-center justify-center bg-indigo-700">
+        <h2 class="text-center font-semibold text-4xl text-white pt-5">Hello World!</h2>
+
+        <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, repudiandae. Praesentium quam iure aliquam tempora veniam sed asperiores facere perferendis natus? Explicabo voluptates ipsam cum mollitia iste vel, neque nostrum ullam quod obcaecati? Eligendi similique dolor, quia ad repudiandae eum?</p>
+
+        
+            <button class="bg-blue-400 m-2 rounded mx-auto font-semibold text-white p-3" onclick="rot()">Click Me</button>
+        
+
+    </div>
+    
+
+    <script>
+        function rot(){
+            var wrap = document.querySelector('.wrap');
+            wrap.classList.toggle('rot');
+            wrap.addEventListener('animationend', function () {  wrap.classList.remove('rot');});
+        }
+    </script>
+</body>
+</html>
